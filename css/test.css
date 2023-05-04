@@ -1,0 +1,131 @@
+
+#menu_text{
+	background-color: #25ba4d;
+	text-align: center;
+	padding: 80px;
+	margin: 0px;
+}
+nav {
+	background-color: #333;
+	/*ngan viec tran padding khi padding me nho hon padding phan tu con*/
+	overflow: hidden;
+}
+nav a{
+	color: white;
+	padding: 14px 20px;
+	/* hien thi menu hang ngang thanh hanh doc */
+	display:block;
+	text-align: center;
+	/* loai bo cac hieu ung duong link: chu mau xanh, nhan vao se doi mau chu, co gach chan ben duoi chu */
+	text-decoration: none;
+}
+nav a:hover{
+	background-color: #DDD;
+	color: black;
+}
+nav a.menu_left{
+	/*troi thanh menu sang ben trai -> bien menu doc ve menu ngang*/
+	float: left;
+}
+nav a.menu_right{
+	/*troi thanh menu sang ben phai -> bien menu doc ve menu ngang*/
+	float: right;
+}
+#left_side{
+	flex:30%;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+}
+#right_side{
+	flex:70%;
+	padding: 10px 20px;
+}	
+#container_side{
+	display:flex;
+	flex-wrap: nowrap;
+}
+footer{
+	background-color: #333;
+	color:white;
+	padding: 10px 20px; 
+	text-align: center;
+}
+footer > a{
+	color: white;
+}
+/*
+table, th, td {
+  border: 1px solid;
+}*/
+ 
+table{
+	font-family: Arial, Helvetica, sans-serif;
+	  border-collapse: collapse;
+	}
+
+	table td, table th {
+	  border: 1px solid #ddd;
+	  padding: 8px;
+	}
+
+	table tr:nth-child(even){background-color: #f2f2f2;}
+
+	table tr:hover {background-color: #ddd;}
+
+	table th {
+	  padding-top: 12px;
+	  padding-bottom: 12px;
+	  text-align: left;
+	  background-color: #04AA6D;
+	  color: white;
+ 	}
+
+ 	.course_item{
+ 		/*width: 33%;
+ 		float: left;*/
+ 		text-align: center;
+ 		flex: 33%;
+ 	}
+ 	.course_image{
+ 		width: 90%;
+ 	}
+
+#course_container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.course_title{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px 10px 5px 10px;
+}
+.course_desc{
+	margin: 0px 10px 20px 10px;
+}
+
+
+ @media(max-width: 800px){
+ 	#left_side{
+ 		flex: 100%;
+ 	}
+ 	#right_side{
+ 		flex: 100%;
+ 	}
+ 	#container_side{
+ 		flex-wrap: wrap;
+ 	}
+ 	.course_item{
+ 		flex: 50%;
+ 	}
+ }
+  @media(max-width: 400px){
+  	#left_side{
+ 		flex: 100%;
+ 	}
+ 	#right_side{
+ 		flex: 100%;
+ 	}
+ 	#container_side{
+ 		flex-wrap: wrap;
+ 	}
+ }
